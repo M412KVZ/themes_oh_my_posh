@@ -1,0 +1,95 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "session",
+                    "style": "plain",
+                    "powerline_symbol": "",
+                    "foreground": "#eb2d95",
+                    "properties": {
+                        "prefix": "",
+                        "display_host": false,
+                        "postfix": ""
+                    }
+                },
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "foreground": "#00aeff",
+                    "properties": {
+                        "prefix": "",
+                        "postfix": "",
+                        "style": "full",
+                        "folder_separator_icon": "|"
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "#ebd723",
+                    "properties": {
+                        "prefix": "  ",
+                        "display_status": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "battery",
+                    "style": "powerline",
+                    "invert_powerline": true,
+                    "properties": {
+                        "charging_icon": "⚡",
+                        "charged_icon": "",
+                        "charged_color": "#07ff07",
+                        "charging_color": "#0e9fff",
+                        "discharging_color": "#ff7d04",
+                        "prefix": "|",
+                        "postfix": "  "
+                    }
+                },
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "foreground": "lightGreen",
+                    "properties": {
+                        "time_format": " 02/01/2006",
+                        "prefix": "|"
+                    }
+                },
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "foreground": "lightRed",
+                    "properties": {
+                        "time_format": " 15:04:05",
+                        "prefix": "|"
+                    }
+                }
+            ]
+        },
+        {"type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+            {
+                "type": "text",
+                "style": "plain",
+                "foreground": "#18f13c",
+                "properties": {
+                "prefix": "",
+                "text": ""
+                }
+                }
+            ]
+        }
+    ]
+}
